@@ -1,0 +1,17 @@
+
+
+$Revision: 1.1 $
+$Id: todo.txt,v 1.1 2013/06/03 03:07:56 mduby Exp $
+
+- add search by location
+  - click on location link
+  
+- move AT-RT to single family
+
+- create family and report tables
+  - report has family of types to report on
+  
+- faceted search to drill down on totals
+
+
+

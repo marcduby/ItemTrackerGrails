@@ -1,0 +1,28 @@
+
+
+20220307 - 
+- enhancements
+  - list end locations only for item search (bag)
+  - types of locations (house, office, box, bag, shelf)
+  - checkmark and last checked date/checkpoint
+  - 
+- approach
+  - troopers in original package, bags or shelf 
+
+$Revision: 1.2 $
+$Id: enhancements.txt,v 1.2 2013/08/09 22:41:52 mduby Exp $
+
+
+- search by location
+  - list by location
+
+- display name for location
+
+- list ordered by number
+
+- no default selection for lists; should give error if none selected
+
+
+  
+  
+  
