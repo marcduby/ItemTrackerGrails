@@ -19,7 +19,11 @@ class Item implements Comparable {
 	
 	public int compareTo(Object object) {
 		Item other = (Item)object;
-		return this?.type?.displayName?.compareTo(other?.type?.displayName)
+		int compared = this?.type?.displayName?.compareTo(other?.type?.displayName)
+		if (compared == 0)
+			return this?.location?.displayName?.compareTo(other?.location?.displayName)
+		else
+			return compared
 	}
 	
 	static constraints = {

@@ -57,7 +57,7 @@ class ReportService {
 		}
 
 		// log name change list
-		log.info "found: " + reportList?.size() + " item locatins for the location count report"
+		log.info "found: " + reportList?.size() + " item locations for the location count report"
 		
 		// sort list
 		Collections.sort(reportList);

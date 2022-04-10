@@ -47,6 +47,7 @@ class ItemController {
 		
 		log.info "looking for items of type: " + typeId
 		List<Item> itemList = this.itemService.getItemsByTypeId(typeId)
+        Collections.sort(itemList)
 		log.info "found: " + itemList.size() + " items of type: " + typeId
 		
 		itemList.each { item ->
@@ -77,7 +78,9 @@ class ItemController {
     def create() {
 		List<Type> typeList = itemService?.getLeafTypesForParent("Star Wars")
 		def myParams = params + ['location.id': session["location_id"]]
-        render(view: "create", model: [itemInstance: new Item(myParams), typeList: typeList])
+        List<Location> locationList = Location.list()
+        Collections.sort(locationList)
+        render(view: "create", model: [itemInstance: new Item(myParams), typeList: typeList, locationList: locationList])
     }
 
     def createCWItem() {
@@ -89,7 +92,9 @@ class ItemController {
     def createEP2Item() {
 		List<Type> typeList = itemService?.getLeafTypesForParent("EP2")
 		def myParams = params + ['location.id': session["location_id"]]
-        render(view: "create", model: [itemInstance: new Item(myParams), typeList: typeList])
+        List<Location> locationList = Location.list()
+        Collections.sort(locationList)
+        render(view: "create", model: [itemInstance: new Item(myParams), typeList: typeList, locationList: locationList])
     }
 
 	def createEP3Item() {
@@ -152,7 +157,9 @@ class ItemController {
             return
         }
 
-        [itemInstance: itemInstance, typeList: typeList]
+        List<Location> locationList = Location.list()
+        Collections.sort(locationList)
+        [itemInstance: itemInstance, typeList: typeList, locationList: locationList]
     }
 
     def update(Long id, Long version) {

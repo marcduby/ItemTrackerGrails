@@ -2,7 +2,7 @@ package com.doobs.item
 
 import java.util.Date;
 
-class Location {
+class Location implements Comparable {
 	Long id
 	String name
 	String description
@@ -20,7 +20,7 @@ class Location {
 	}
 	
 	public int compareTo(Object other) {
-		Type otherType = (Type)other;
+		Location otherType = (Location)other;
 		return this?.displayName?.compareTo(otherType?.displayName);
 	}
 
