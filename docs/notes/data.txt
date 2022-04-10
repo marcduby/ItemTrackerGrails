@@ -1,0 +1,20 @@
+
+
+20220317 - items getting moved 
+- from bag g2013BigMiscEP3
+  - moved black arc and commander vill to goshen DV tin
+- in goshen, got 4 windu ep3 troopers and 1 5th fleet troopers  
+  - new or from watertown brown bookcase near window?
+  - in seperate bag in goshen
+- no name bag with ep2 troopers
+  - assume come from watertown right and middle desk
+  - 20220328 - maybe work desk left cortner 
+    - http://localhost:8080/ItemTrackerGrails/item/listByLocation/35
+
+- to check in watertown 
+  - brown bookcase 
+  - verify all boxes for missing
+  - split monitor stand 
+  - split central window stand
+  - split left monitor stand 
+  
